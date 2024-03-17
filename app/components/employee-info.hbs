@@ -1,0 +1,26 @@
+{{!-- {{yield}} --}}
+
+<button {{action "handleClick" }} class="btn btn-primary m-4" type="button">Employees</button>
+
+<div class="bord">
+    {{#if this.isExpand}}
+    {{#each @employees as |employee|}}
+    <div class=" card1">
+        <h1>{{employee.employee_name}}</h1>
+        <LinkTo @route="employees/details" @model="{{employee.id}}">Details</LinkTo>
+
+
+        <div class="details">
+            <span>Age</span>
+            <h3 style="color: azure; display:inline;">{{employee.employee_age}}</h3>
+            <br>
+            <span>Salary</span>
+            <h3 style="color: azure; display:inline;">{{employee.employee_salary}}</h3>
+
+        </div>
+
+
+    </div>
+    {{/each}}
+    {{/if}}
+</div>

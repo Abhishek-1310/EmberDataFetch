@@ -1,0 +1,47 @@
+.head {
+    background-color: antiquewhite;
+}
+
+h1 {
+    margin-bottom: 18px;
+}
+
+.card1 {
+
+    /* background-color: rgb(81, 244, 244); */
+    border: solid 2px black;
+    border-radius: 14px;
+    margin: 10px;
+    position: relative;
+
+}
+
+.bord {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+
+}
+
+h3 {
+    color: aliceblue;
+}
+
+.info {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.detail {
+    background-color: rgb(119, 243, 226)(0, 225, 255);
+}
+
+.details {
+    background-color: rgb(19, 145, 191);
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 2px black;
+
+}
